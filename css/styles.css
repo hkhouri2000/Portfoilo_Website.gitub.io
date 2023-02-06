@@ -12811,3 +12811,10 @@ body {
 .terminal span.error {
     color: red;
 }
+
+.img-about {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    border: 0.25rem solid white;
+}
