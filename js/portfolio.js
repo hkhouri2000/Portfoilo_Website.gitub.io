@@ -6,19 +6,22 @@ function processCommand(input) {
     }
 
     // About command
+    // TODO: Specify additional details as needed
     if (input == 'about') {
         return `Hello, I'm Ivan!<br/>
-        I'm a computer science student in the Pennsylvaia State University.`;
+        I'm a computer science student in University of California.`;
     }
 
     // Experience command
+    // TODO: Specify all the experience as needed. Use <br> as line separator.
     if (input == 'experience') {
         return `<span class="highlight">Customer Service Executive</span> - Municipality (June - July 2017)`;
     }
 
     // Education command
+    // TODO: Specify all the education background as needed. Use <br> as line separator.
     if (input == 'education') {
-        return `<span class="highlight">The Pennsylvania State University </span><br/>
+        return `<span class="highlight">University of California</span><br/>
         College of Engineering-B.S. in Computer Science<br/>
         Eberly College of Science-B.S. in Mathematics, System Analysis<br/>
         <span class="highlight">Anticipated graduation</span>: Dec 2025<br/>
@@ -28,6 +31,7 @@ function processCommand(input) {
     }
 
     // Skills command 
+    // TODO: Specify all the skills as needed. Use <br> as line separator.
     if (input == 'skills') {
         return `<span class="highlight">Java</span>, Python, C#, C, HTML, CSS, JavaScript, TypeScript, Verilog, KQL, SQL<br/>
         <span class="highlight">React</span>, OpenCV, Kali Linux, Honeycomb, OpenTelemetry, SQLMap, Hashcat<br/>
@@ -37,6 +41,7 @@ function processCommand(input) {
     }
 
     // Contact command
+    // TODO: Specify the contact as needed. Use <br> as line separator.
     if (input == 'contact') {
         return `<span class="highlight">Ivil1976@gmail.com</span> <br/> (214)-203-9583 `;
     }

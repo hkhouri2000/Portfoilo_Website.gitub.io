@@ -12665,6 +12665,7 @@ body {
     margin-bottom: 5rem;
 }
 
+/*
 .projects-section {
     padding: 3rem 0;
 }
@@ -12672,6 +12673,7 @@ body {
 .projects-section .featured-text {
     padding: 2rem;
 }
+*/
 
 @media (min-width: 992px) {
     .projects-section .featured-text {
