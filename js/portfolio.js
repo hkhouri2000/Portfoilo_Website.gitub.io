@@ -8,7 +8,7 @@ function processCommand(input) {
     // About command
     // TODO: Specify additional details as needed
     if (input == 'about') {
-        return `Hello, I'm Ivan!<br/>
+        return `Hello, I'm Hamdan!<br/>
         I'm a computer science student in University of California.`;
     }
 
