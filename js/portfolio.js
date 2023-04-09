@@ -8,7 +8,7 @@ function processCommand(input) {
     // About command
     // TODO: Specify additional details as needed
     if (input == 'about') {
-        return `Hello, I'm Hamdan!<br/>
+        return `Hello, I'm Ivan!<br/>
         I'm a computer science student in University of California.`;
     }
 
@@ -76,7 +76,7 @@ function sendCommand(event) {
 
     // Add the command 
     let commandOutput = document.createElement('div', { 'class': 'terminal-command' });
-    commandOutput.innerHTML = `<span>&gt;&gt;</span><span>${input}</span>`;
+    commandOutput.innerHTML = `<span>&#10140;&nbsp;</span><span>${input}</span>`;
 
     let responseOutput = document.createElement('div', { 'class': 'terminal-output' });
     responseOutput.innerHTML = output;
