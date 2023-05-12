@@ -496,40 +496,36 @@
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                    <img src="assets/img/demo-image-02.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/p3 thumbnail.jpg" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-primary">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project3-details">
-                                Field-Programming Gate Array (FPGA) MIPS Five Stage Pipelined CPU
+                                Chat Application
+                            </a>
+                        </h5>
+                        <font color="black"><h7>Summer 2022</h7>
+                        <ul class="text-start">
+                            <li>Implemented a chat application with client and server components and an interactive GUI </li>
+                        </ul></font>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="assets/img/p2 thumbnail.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-primary">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#project2-details">
+                                Field-Programming Gate Array (FPGA) MIPS Five Stage Pipelined CPU                                                       
                             </a>
                         </h5>
                         <h7>Fall 2021</h7>
                         <ul class="text-start">
-                            <li>Utilized Xilinx Vivado software to implement a mini-CPU written in Verilog on a
-                                xc7z010clg400-1 device</li>
-                            <li>Mitigated data hazards and increased performance by implementing instruction
-                                forwarding</li>
+                            <li>Utilized Xilinx Vivado software to implement a mini-CPU written in Verilog on a xc7z010clg400-1 device</li>
+                            <li>Mitigated data hazards and increased performance by implementing instruction forwarding</li>
                         </ul>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                    <img src="assets/img/demo-image-01.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-primary">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#project2-details">
-                                Room Scheduler
-                            </a>
-                        </h5>
-                        <h7>Summer 2021</h7>
-                        <ul class="text-start">
-                            <li>Wrote a java application to facilitate room reservations</li>
-                            <li>Features: adding a new room, cancelling a reservation, adding a new date,
-                                checking status, dropping a room, interactive GUI</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="assets/img/RoomScheduler thumbnail.png" class="d-block w-100" alt="...">
+                    <img src="assets/img/p1 thum.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-primary">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project1-details">
@@ -648,18 +644,22 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Field-Programming Gate Array (FPGA) MIPS Five Stage Pipelined CPU
+                        <h5 class="modal-title">Chat Application
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="assets/img/demo-image-02.jpg" class="img-thumbnail" />
+                        <img src="assets/img/p3 extra.mp4" class="img-thumbnail" />
                         <ul class="text-start text-black-50 mb-0">
-                            <li>Fall 2021</li>
-                            <li>Utilized Xilinx Vivado software to implement a mini-CPU written in Verilog on a
-                                xc7z010clg400-1 device</li>
-                            <li>Mitigated data hazards and increased performance by implementing instruction
-                                forwarding</li>
+                            <p>
+                                The chat application project is a client-server-based system implemented in the C programming language. It aims to provide a seamless communication platform where multiple clients can interact with each other through a central server.
+
+The application consists of two primary components: the client and the server. The server component acts as a central hub that facilitates the communication between clients. It maintains a record of connected clients and manages the distribution of messages between them. The server is responsible for handling incoming connections, authenticating users, and ensuring reliable message delivery.
+
+On the other hand, the client component serves as an interface for users to interact with the chat system. It allows users to connect to the server, send messages to other clients, and receive messages from them. The client application provides a user-friendly interface that enables users to view online users, join chat rooms, and engage in real-time conversations.
+
+The core implementation of the project utilizes the C programming language. C is a widely used programming language known for its efficiency and low-level control. By leveraging C, the application can achieve optimal performance and manage system resources effectively.
+                            </p>
                         </ul>
                     </div>
                 </div>
@@ -671,17 +671,53 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Room Scheduler
+                        <h5 class="modal-title">Field-Programming Gate Array (FPGA) MIPS Five Stage Pipelined CPU
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="assets/img/demo-image-01.jpg" class="img-thumbnail" />
+                        <img src="assets/img/p2 extra.png" class="img-thumbnail" />
                         <ul class="text-start text-black-50 mb-0">
-                            <li>Summer 2021</li>
-                            <li>Wrote a java application to facilitate room reservations</li>
-                            <li>Features: adding a new room, cancelling a reservation, adding a new date,
-                                checking status, dropping a room, interactive GUI</li>
+                        <p>
+                         In this project, I implemented a pipelined MIPS processor datapath with various features. The project consisted of two main parts:
+                         </p>
+                        <p>
+                        Part 1:
+                        Implemented a 5-stage pipeline (FDEMW) with branch resolution in the Decode (D) stage and non-memory hazard detection in the Decode (D) stage. Additionally, a 2-cycle pipelined multiplication unit spanning the Execute (E) and Memory (M) stages was included, which reads inputs in the Execute stage and produces outputs in the Memory stage (available in the Writeback stage). The project did not include a hardware divider. For Part 1, I was responsible for implementing hazard detection logic for all hazards and forwarding logic for the EX stage for some hazards, as well as forwarding logic for the M stage for all hazards.
+                        </p>
+                        <p>
+                        Part 2:
+                        Implemented branch prediction extensions, including a 2K-entry bimodal table of 2-bit predictors with an initial 
+                        state of "10." Additionally, a 32-entry Branch Target Buffer (BTB) was implemented to cache the contents 
+                        (not the address) of supported branch and jump instructions (BEQ, BNE, J, JAL). Instructions like JR and 
+                        JALR were explicitly not cached due to target indirection.
+                        </p>
+                        <p>
+                        For both parts, I implemented an instruction cache and a data cache as replacements for the Instruction 
+                        Memory (IMEM) and Data Memory (DMEM), respectively, in the memory hierarchy. The instruction cache, a 2KB 
+                        direct-mapped cache with a block size of 64 bytes, served cache misses from the IMEM. The data cache, 
+                        a 2KB 2-way associative cache with an inverse-MRU eviction policy, was used to serve cache misses from the 
+                        DMEM. The DMEM had a write-back policy and stall-allocated on store misses. Evicted dirty lines were written 
+                        back to the DMEM.
+                        </p>
+                        <p>
+                        Throughout the project, I worked with a provided framework that included files for hazard detection, 
+                        forwarding logic, the branch history table (BHT), and the implementation of the caches. The project was 
+                        divided into milestones, and for Milestone 1, I completed parts 1 and 2, utilizing a dummy memory hierarchy
+                        to test the design before integrating the caches.
+                        </p>
+                        <p>
+                        The framework files relevant to my edits and additions for parts 1 and 2 were:
+                        </p>
+                        <p>
+                        HazardDetection.v: Implementation of hazard detection logic.
+                        EXForwarding.v: Implementation of forwarding logic for the Execute (EX) stage.
+                        MEMforwarding.v: Implementation of forwarding logic for the Memory (MEM) stage.
+                        BHT.v: Implementation of the branch history table for branch prediction.
+                        Overall, this project allowed me to gain experience in designing and implementing a 
+                        pipelined MIPS processor datapath with various pipeline stages, hazard detection, forwarding logic, 
+                        branch prediction, and memory hierarchy using instruction and data caches.
+                        </p>
                         </ul>
                     </div>
                 </div>
@@ -698,9 +734,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="assets/img/Screen Recording 2023-05-11 at 11.09.26 PM.mov" class="img-thumbnail" />
+                        <img src="assets/img/p1 extra.mov" class="img-thumbnail" />
                         <ul class="text-start text-black-50 mb-0">
-                            
+                            <p>
                             The Room Scheduler project for Tiny College is a room scheduling application that allows faculty members 
                             to reserve rooms for specific dates based on their seating requirements. The application features a user-friendly 
                             GUI interface and utilizes a Derby database for data storage. The design follows good 
@@ -715,7 +751,7 @@
                             member" to display the reserved rooms and waitlisted dates for a faculty member, and 
                             "Drop Room" to remove a room from the application and reassign reservations if possible. 
                             The project emphasizes good Object-Oriented (OO) design practices and uses SQL statements and PreparedStatements for efficient database operations.
-                        </ul>
+                            </p> </ul>
                     </div>
                 </div>
             </div>
