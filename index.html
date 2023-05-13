@@ -466,17 +466,17 @@
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                    <img src="assets/img/demo-image-02.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/p5 thumb.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-primary">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project5-details">
-                                Real Estate Database Application
+                                Image Filtering and Hough Transform
                             </a>
                         </h5>
-                        <h7>Fall 2022</h7>
+                        <h7>Summer 2022</h7>
                         <ul class="text-start">
-                            <li>Designed and developed an application to post a list of houses online</li>
-                            <li>Implemented a http interface to the database using php</li>
+                            <li>Implemented image filtering and Hough Transform algorithms to develop a line detector that can identify the start and end points of straight line segments in images</li>
+                            <li>Experimented with different parameter values and analyzed their impact on the performance of the line detector, comparing the results to those obtained using Matlab's image processing toolbox functions</li>
                         </ul>
                     </div>
                 </div>
@@ -494,7 +494,7 @@
                                 involving tasks such as image manipulation, Bayer 
                                 pattern identification, white balancing, demosaicing, 
                                 brightness adjustment, gamma correction, and image 
-                                compression. </li>
+                                compression</li>
                         </ul>
                     </div>
                 </div>
@@ -607,15 +607,76 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Real Estate Database Application</h5>
+                        <h5 class="modal-title">Image Filtering and Hough Transform</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="assets/img/demo-image-02.jpg" class="img-thumbnail" />
+                        <iframe src="assets/img/p5 extra.pdf" width="100%" height="600px"></iframe>
                         <ul class="text-start text-black-50 mb-0">
-                            <li>Fall 2022</li>
-                            <li>Designed and developed an application to post a list of houses online</li>
-                            <li>Implemented a http interface to the database using php</li>
+                            <!DOCTYPE html>
+                            <html>
+                           
+                            
+                            <body>
+                                <p>In this project assignment, I implemented various basic image processing algorithms and combined them to build a line detector based on the Hough Transform. The goal was to develop code that can identify straight line segments in images by finding their start and end points. Several test images were provided to evaluate the performance of the line detector code.</p>
+                            
+                                <p>The Hough Transform algorithm utilized in this project uses parameters whose optimal values depend on the image data being processed. The code was run on the test images to understand the impact of parameter changes on performance.</p>
+                            
+                                <p>The implementation was done using MATLAB and the image processing toolbox. It was important to note that external code was not allowed unless explicitly permitted, and plagiarism was strictly prohibited.</p>
+                            
+                                <h2>Project Parts</h2>
+                                <ol>
+                                    <li>
+                                        <h3>Theory Questions</h3>
+                                        <p>Answering theoretical questions related to the Hough Transform line parametrization, line equations, and their visualization.</p>
+                                    </li>
+                                    <li>
+                                        <h3>Implementation</h3>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>Image Filtering</h4>
+                                                <p>Implementing a function to convolve an image with a given convolution filter.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Edge Detection</h4>
+                                                <p>Developing a function to detect edge intensity and orientation in an image using the Sobel filter and non-maximum suppression.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Hough Transform</h4>
+                                                <p>Implementing the Hough Transform algorithm to identify lines in an edge magnitude image.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Finding Lines</h4>
+                                                <p>Writing a function to detect lines in the Hough transform accumulator and suppress non-maximal cells.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Fitting Line Segments</h4>
+                                                <p>Pruning the detected lines into line segments that do not extend beyond the objects they belong to.</p>
+                                            </li>
+                                            <li>
+                                                <h4>Extra Credit</h4>
+                                                <p>Implementing an alternative version of the line segment fitting function and comparing it with the MATLAB built-in function.</p>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li>
+                                        <h3>Experiments</h3>
+                                        <ol type="a">
+                                            <li>
+                                                <h4>Running the Hough detector on a set of test images and generating intermediate output images.</h4>
+                                            </li>
+                                            <li>
+                                                <h4>Analyzing the performance of the code on different images, evaluating the effect of parameter changes, identifying problematic steps, and suggesting improvements.</h4>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            
+                                <p>Overall, this project assignment aimed to develop a solid understanding of image filtering, edge detection, and the Hough Transform algorithm while honing MATLAB programming skills and analytical thinking in the field of computer vision.</p>
+                            </body>
+                            
+                            </html>
+                            
                         </ul>
                     </div>
                 </div>
@@ -631,7 +692,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="assets/img/p4 extra.png" class="img-thumbnail" />
+                        <iframe src="assets/img/p4 extra.pdf" width="100%" height="600px"></iframe>
                         <ul class="text-start text-black-50 mb-0">
                             <p>In this project, I developed a basic image processing pipeline using Matlab. The purpose of the project was to familiarize myself with Matlab as a tool for manipulating images. The project involved several tasks, which are summarized below:</p>
 
