@@ -481,7 +481,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                    <img src="assets/img/demo-image-01.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/p4 thumb.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-primary">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project4-details">
@@ -494,7 +494,7 @@
                                 involving tasks such as image manipulation, Bayer 
                                 pattern identification, white balancing, demosaicing, 
                                 brightness adjustment, gamma correction, and image 
-                                compression </li>
+                                compression. </li>
                         </ul>
                     </div>
                 </div>
@@ -631,11 +631,33 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="assets/img/demo-image-01.jpg" class="img-thumbnail" />
+                        <img src="assets/img/p4 extra.png" class="img-thumbnail" />
                         <ul class="text-start text-black-50 mb-0">
-                            <li>Summer 2022</li>
-                            <li>Implemented a chat application with client and server components and an
-                                interactive GUI </li>
+                            <p>In this project, I developed a basic image processing pipeline using Matlab. The purpose of the project was to familiarize myself with Matlab as a tool for manipulating images. The project involved several tasks, which are summarized below:</p>
+
+<h4>Initials:</h4>
+<p>I loaded the image into Matlab and determined its properties, including the number of bits per integer, width, and height. I then converted the image into a double-precision array.</p>
+
+<h4>Linearization:</h4>
+<p>The image's 2D-array was not a linear function of the true energy received by each pixel. I applied a linear transform to the image, mapping specific pixel values to a range of [0, 1]. I also clipped negative values to 0 and values greater than 1 to 1.</p>
+
+<h4>Identifying the correct Bayer pattern:</h4>
+<p>Most cameras capture images using a Bayer pattern, where each pixel captures only one color channel. I developed a method to identify the Bayer pattern used in the image, which could be one of the four possible patterns: 'grbg', 'rggb', 'bggr', or 'gbrg'.</p>
+
+<h4>White balancing:</h4>
+<p>Cameras apply white balancing to adjust the relative weights of the red, green, and blue measurements, ensuring that white objects appear white in the image. I implemented both gray world and white world white balancing algorithms and compared the results.</p>
+
+<h4>Demosaicing:</h4>
+<p>After white balancing, I performed demosaicing to convert the partial color channels into three full-resolution color channels. I used bilinear interpolation for demosaicking, utilizing Matlab's interp2 function.</p>
+
+<h4>Brightness adjustment and gamma correction:</h4>
+<p>I adjusted the image's brightness by linearly scaling it. The scaling factor was selected as a percentage of the pre-brightening maximum grayscale value. I also applied a non-linear gamma correction transform to match the sensor measurements to the sRGB standard.</p>
+
+<h4>Compression:</h4>
+<p>Finally, I stored the processed image in two formats: PNG (no compression) and JPEG (with quality setting 95). I compared the compressed and uncompressed images, analyzed the compression ratio, and determined the lowest JPEG quality setting that resulted in indistinguishable image quality.</p>
+
+<p>The project allowed me to gain hands-on experience with image processing techniques and the use of Matlab for manipulating and analyzing images. It enhanced my understanding of the image processing pipeline and provided an opportunity to apply various transformations and algorithms to improve image quality and visual appearance.</p>
+
                         </ul>
                     </div>
                 </div>
