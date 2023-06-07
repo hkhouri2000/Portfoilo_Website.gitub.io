@@ -431,42 +431,43 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="assets/img/bg-masthead.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/p7 thum.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-primary">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#featured-projec7-details">
-                                Personal
-                                Website and Terminal-Like Profile</a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#featured-project7-details">
+                                Tracking Objects in Videos</a>
                         </h5>
+                        <h7>Summer 2022</h7>
                         <ul class="text-start">
-                            <li>Dec 2022 - Current</li>
-                            <li>Created an about me website from scratch using HTML, CSS, and JavaScript</li>
-                            <li>Provided an interactive terminal-like portal which outputs information about myself
-                                based on the user's command line input</li>
+                            <li>Implemented Lucas-Kanade and Matthew-Baker object tracking algorithms for video sequences</li>
+                            <li>Demonstrated proficiency in computer vision techniques, including warp transformations, Jacobian calculations, and optimization algorithms</li>
                         </ul>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                    <img src="assets/img/demo-image-01.jpg" class="d-block w-100" alt="...">
+                    <img src="assets/img/p6 thum.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-primary">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project6-details">
-                                Tadbeer Agency - A Private Recruitment Agency Licenses for
-                                Domestic Workers</a>
+                                (3D point to 2D) Point and Inverse (2D point to 3D ray) Camera Projections</a>
                         </h5>
-                        <h7>May 2022 - Current</h7>
+                        <h7>Summer 2022</h7>
                         <ul class="text-start">
-                            <li>Worked directly with vendors to cut infrastructure costs by 40% while keeping
-                                specifications high</li>
-                            <li>Installed desktop computers, server, networks, safety systems and Q-Matic system
+                            <li>Implemented forward and inverse camera projection techniques for 3D 
+                                point to 2D point mapping and 2D point to 3D ray reconstruction, 
+                                resulting in accurate 3D reconstruction of human body joints from 
+                                motion capture data
+                            <li>
+                                Utilized camera calibration parameters and triangulation methods to project 
+                                3D joint data into pixel coordinates, enabling quantitative analysis of 
+                                reconstruction error and practical understanding of epipolar geometry
                             </li>
-                            <li>Implemented a channel for service provision such as a website, call center and a
-                                recruitment platform</li>
+                           
                         </ul>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
-                    <img src="assets/img/p5 thumb.png" class="d-block w-100" alt="...">
+                    <img src="assets/img/p5 thum.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h5 class="text-primary">
                             <a href="#" data-bs-toggle="modal" data-bs-target="#project5-details">
@@ -506,10 +507,10 @@
                                 Chat Application
                             </a>
                         </h5>
-                        <font color="white"><h7>Summer 2022</h7>
+                        <h7>Summer 2022</h7>
                         <ul class="text-start">
                             <li>Implemented a chat application with client and server components and an interactive GUI </li>
-                        </ul></font>
+                        </ul>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
@@ -535,11 +536,11 @@
                                 Room Scheduler
                             </a>
                         </h5>
-                        <font color ="white"><h7>Summer 2021</h7></font>
+                        <h7>Summer 2021</h7>
                         <ul class="text-start">
-                            <font color ="white"><li>Wrote a java application to facilitate room reservations</li>
+                            <li>Wrote a java application to facilitate room reservations</li>
                             <li>Features: adding a new room, cancelling a reservation, adding a new date,
-                                checking status, dropping a room, interactive GUI</li></font>
+                                checking status, dropping a room, interactive GUI</li>
                         </ul>
                     </div>
                 </div>
@@ -556,21 +557,39 @@
             </button>
         </div>
 
+
+        
         <!-- Featured Project 7 Additional Details -->
         <div id="featured-project7-details" class="modal" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Personal Website and Terminal-Like Profile</h5>
+                        <h5 class="modal-title">Tracking Objects in Videos</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="assets/img/bg-masthead.jpg" class="img-thumbnail" />
+                        <iframe src="assets/img/p7 extra.pdf" width="100%" height="600px"></iframe>
                         <ul class="text-start text-black-50 mb-0">
-                            <li>Dec 2022 - Current</li>
-                            <li>Created an about me website from scratch using HTML, CSS, and JavaScript</li>
-                            <li>Provided an interactive terminal-like portal which outputs information about myself
-                                based on the user's command line input</li>
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                              <title>Project Information</title>
+                            </head>
+                            <body>
+                              <h1>Project Information</h1>
+                            
+                            <p>The project involves implementing object tracking algorithms, specifically the Lucas-Kanade tracker and the Matthew-Baker (inverse compositional) method. The goal is to track an object in a video by updating an affine transform that warps each frame to align with a template defined in the first frame.</p>
+
+<p>In the Lucas-Kanade tracker, the algorithm minimizes the sum of squared differences between the warped image and the template. It uses a linear approximation to find the optimal alignment. The Jacobian and Hessian matrices are computed iteratively to update the parameters of the warp.</p>
+
+<p>The Matthew-Baker method is a more computationally efficient version of the Lucas-Kanade tracker. It utilizes the inverse compositional approach, where the warp is inverted and composed with the template image. This reduces the computational complexity compared to the forward additive alignment used in Lucas-Kanade.</p>
+
+<p>The project provides two video sequences: a car on a road and a helicopter approaching a runway. The initialization step involves drawing a bounding box around the object to be tracked in the first frame. The tracker then updates the warp parameters for each subsequent frame, aligning the template with the warped current frame.</p>
+
+<p>The computational complexity of the initialization step and each runtime iteration of the Inverse Compositional method needs to be determined and compared to the regular Lucas-Kanade method. The complexity should be expressed in terms of the number of pixels in the template and input image, as well as the number of parameters used for the warp.</p>
+
+<p>Overall, the project focuses on implementing and understanding object tracking algorithms, applying them to provided video sequences, and analyzing their computational efficiency.</p>
+
                         </ul>
                     </div>
                 </div>
@@ -582,20 +601,47 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Tadbeer Agency - A Private Recruitment Agency Licenses for
-                            Domestic Workers</h5>
+                        <h5 class="modal-title">(3D point to 2D) Point and Inverse (2D point to 3D ray) Camera Projection</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="assets/img/demo-image-01.jpg" class="img-thumbnail" />
+                        <iframe src="assets/img/p6 extra.pdf" width="100%" height="600px"></iframe>
                         <ul class="text-start text-black-50 mb-0">
-                            <li>May 2022 - Current</li>
-                            <li>Worked directly with vendors to cut infrastructure costs by 40% while keeping
-                                specifications high</li>
-                            <li>Installed desktop computers, server, networks, safety systems and Q-Matic system
-                            </li>
-                            <li>Implemented a channel for service provision such as a website, call center and a
-                                recruitment platform</li>
+                            <!DOCTYPE html>
+                            <html>
+                            <head>
+                              <title>Project Information</title>
+                            </head>
+                            <body>
+                              <h1>Project Information</h1>
+                            
+                              <h2>Overview</h2>
+                              <p>
+                                This project focuses on implementing forward and inverse camera projection in the context of computer vision. The goal is to project 3D coordinates of body joints onto 2D image pixel coordinates and then reconstruct the original 3D coordinates using triangulation from two camera views. The project involves understanding the pinhole camera model, camera calibration parameters, and the transformation chain from 3D to 2D and back again.
+                              </p>
+                            
+                              <h2>Tasks</h2>
+                              <ol>
+                                <li>Parsing and interpreting the 3D joint data from motion capture recordings.</li>
+                                <li>Reading and understanding the camera calibration parameters for two video cameras.</li>
+                                <li>Projecting 3D joint data into pixel coordinates in each camera view using the camera parameters.</li>
+                                <li>Reconstructing the 3D location of each joint from the projected 2D points using triangulation.</li>
+                                <li>Computing the Euclidean distance between the original and reconstructed 3D joints to measure reconstruction error.</li>
+                                <li>Exploring epipolar geometry by computing and displaying epipolar lines between the two camera views.</li>
+                              </ol>
+                            
+                              <h2>Skills and Tools</h2>
+                              <p>
+                                The project requires Matlab programming skills and provides an opportunity to gain practical experience in computer vision, including intrinsic and extrinsic camera parameters, projection of 3D points into 2D images, triangulation for 3D reconstruction, and evaluating the accuracy of the reconstructed points. The quantitative evaluation involves calculating L2 distances between the original and reconstructed points and analyzing statistics such as mean, standard deviation, minimum, median, and maximum distances.
+                              </p>
+                            
+                              <h2>Conclusion</h2>
+                              <p>
+                                Overall, the project aims to deepen understanding and implementation of camera projection and triangulation techniques in computer vision, while also providing insights into the challenges and considerations involved in practical applications of these methods.
+                              </p>
+                            </body>
+                            </html>
+                            
                         </ul>
                     </div>
                 </div>
@@ -615,7 +661,9 @@
                         <ul class="text-start text-black-50 mb-0">
                             <!DOCTYPE html>
                             <html>
-                           
+                               
+                                
+                                <h1>Project Information</h1>
                             
                             <body>
                                 <p>In this project assignment, I implemented various basic image processing algorithms and combined them to build a line detector based on the Hough Transform. The goal was to develop code that can identify straight line segments in images by finding their start and end points. Several test images were provided to evaluate the performance of the line detector code.</p>
@@ -663,10 +711,10 @@
                                         <h3>Experiments</h3>
                                         <ol type="a">
                                             <li>
-                                                <h4>Running the Hough detector on a set of test images and generating intermediate output images.</h4>
+                                                <p>Running the Hough detector on a set of test images and generating intermediate output images.<p>
                                             </li>
                                             <li>
-                                                <h4>Analyzing the performance of the code on different images, evaluating the effect of parameter changes, identifying problematic steps, and suggesting improvements.</h4>
+                                                <p>Analyzing the performance of the code on different images, evaluating the effect of parameter changes, identifying problematic steps, and suggesting improvements.</p>
                                             </li>
                                         </ol>
                                     </li>
@@ -694,31 +742,72 @@
                     <div class="modal-body">
                         <iframe src="assets/img/p4 extra.pdf" width="100%" height="600px"></iframe>
                         <ul class="text-start text-black-50 mb-0">
-                            <p>In this project, I developed a basic image processing pipeline using Matlab. The purpose of the project was to familiarize myself with Matlab as a tool for manipulating images. The project involved several tasks, which are summarized below:</p>
-
-<h4>Initials:</h4>
-<p>I loaded the image into Matlab and determined its properties, including the number of bits per integer, width, and height. I then converted the image into a double-precision array.</p>
-
-<h4>Linearization:</h4>
-<p>The image's 2D-array was not a linear function of the true energy received by each pixel. I applied a linear transform to the image, mapping specific pixel values to a range of [0, 1]. I also clipped negative values to 0 and values greater than 1 to 1.</p>
-
-<h4>Identifying the correct Bayer pattern:</h4>
-<p>Most cameras capture images using a Bayer pattern, where each pixel captures only one color channel. I developed a method to identify the Bayer pattern used in the image, which could be one of the four possible patterns: 'grbg', 'rggb', 'bggr', or 'gbrg'.</p>
-
-<h4>White balancing:</h4>
-<p>Cameras apply white balancing to adjust the relative weights of the red, green, and blue measurements, ensuring that white objects appear white in the image. I implemented both gray world and white world white balancing algorithms and compared the results.</p>
-
-<h4>Demosaicing:</h4>
-<p>After white balancing, I performed demosaicing to convert the partial color channels into three full-resolution color channels. I used bilinear interpolation for demosaicking, utilizing Matlab's interp2 function.</p>
-
-<h4>Brightness adjustment and gamma correction:</h4>
-<p>I adjusted the image's brightness by linearly scaling it. The scaling factor was selected as a percentage of the pre-brightening maximum grayscale value. I also applied a non-linear gamma correction transform to match the sensor measurements to the sRGB standard.</p>
-
-<h4>Compression:</h4>
-<p>Finally, I stored the processed image in two formats: PNG (no compression) and JPEG (with quality setting 95). I compared the compressed and uncompressed images, analyzed the compression ratio, and determined the lowest JPEG quality setting that resulted in indistinguishable image quality.</p>
-
-<p>The project allowed me to gain hands-on experience with image processing techniques and the use of Matlab for manipulating and analyzing images. It enhanced my understanding of the image processing pipeline and provided an opportunity to apply various transformations and algorithms to improve image quality and visual appearance.</p>
-
+                           
+                            
+                            <h1>Project Information</h1>
+                            
+                            <p>
+                                In this project, I developed a basic image processing pipeline using Matlab.
+                                The purpose of the project was to familiarize myself with Matlab as a tool for manipulating images.
+                                The project involved several tasks, which are summarized below:
+                            </p>
+                            
+                            <h2>Initials</h2>
+                            
+                            <p>
+                                I loaded the image into Matlab and determined its properties, including the number of bits per integer, width, and height.
+                                I then converted the image into a double-precision array.
+                            </p>
+                            
+                            <h2>Linearization</h2>
+                            
+                            <p>
+                                The image's 2D-array was not a linear function of the true energy received by each pixel.
+                                I applied a linear transform to the image, mapping specific pixel values to a range of [0, 1].
+                                I also clipped negative values to 0 and values greater than 1 to 1.
+                            </p>
+                            
+                            <h2>Identifying the correct Bayer pattern</h2>
+                            
+                            <p>
+                                Most cameras capture images using a Bayer pattern, where each pixel captures only one color channel.
+                                I developed a method to identify the Bayer pattern used in the image, which could be one of the four possible patterns: 'grbg', 'rggb', 'bggr', or 'gbrg'.
+                            </p>
+                            
+                            <h2>White balancing</h2>
+                            
+                            <p>
+                                Cameras apply white balancing to adjust the relative weights of the red, green, and blue measurements, ensuring that white objects appear white in the image.
+                                I implemented both gray world and white world white balancing algorithms and compared the results.
+                            </p>
+                            
+                            <h2>Demosaicing</h2>
+                            
+                            <p>
+                                After white balancing, I performed demosaicing to convert the partial color channels into three full-resolution color channels.
+                                I used bilinear interpolation for demosaicking, utilizing Matlab's interp2 function.
+                            </p>
+                            
+                            <h2>Brightness adjustment and gamma correction</h2>
+                            
+                            <p>
+                                I adjusted the image's brightness by linearly scaling it.
+                                The scaling factor was selected as a percentage of the pre-brightening maximum grayscale value.
+                                I also applied a non-linear gamma correction transform to match the sensor measurements to the sRGB standard.
+                            </p>
+                            
+                            <h2>Compression</h2>
+                            
+                            <p>
+                                Finally, I stored the processed image in two formats: PNG (no compression) and JPEG (with quality setting 95).
+                                I compared the compressed and uncompressed images, analyzed the compression ratio, and determined the lowest JPEG quality setting that resulted in indistinguishable image quality.
+                            </p>
+                            
+                            <p>
+                                The project allowed me to gain hands-on experience with image processing techniques and the use of Matlab for manipulating and analyzing images.
+                                It enhanced my understanding of the image processing pipeline and provided an opportunity to apply various transformations and algorithms to improve image quality and visual appearance.
+                            </p>
+                            
                         </ul>
                     </div>
                 </div>
@@ -737,15 +826,34 @@
                     <div class="modal-body">
                         <img src="assets/img/p3 extra.mp4" class="img-thumbnail" />
                         <ul class="text-start text-black-50 mb-0">
+                          
+                            
+                            <h1>Project Information</h1>
+                            
                             <p>
-                                The chat application project is a client-server-based system implemented in the C programming language. It aims to provide a seamless communication platform where multiple clients can interact with each other through a central server.
-
-The application consists of two primary components: the client and the server. The server component acts as a central hub that facilitates the communication between clients. It maintains a record of connected clients and manages the distribution of messages between them. The server is responsible for handling incoming connections, authenticating users, and ensuring reliable message delivery.
-
-On the other hand, the client component serves as an interface for users to interact with the chat system. It allows users to connect to the server, send messages to other clients, and receive messages from them. The client application provides a user-friendly interface that enables users to view online users, join chat rooms, and engage in real-time conversations.
-
-The core implementation of the project utilizes the C programming language. C is a widely used programming language known for its efficiency and low-level control. By leveraging C, the application can achieve optimal performance and manage system resources effectively.
+                                The chat application project is a client-server-based system implemented in the C programming language.
+                                It aims to provide a seamless communication platform where multiple clients can interact with each other through a central server.
+                                The application consists of two primary components: the client and the server.
                             </p>
+                            
+                            <p>
+                                The server component acts as a central hub that facilitates the communication between clients.
+                                It maintains a record of connected clients and manages the distribution of messages between them.
+                                The server is responsible for handling incoming connections, authenticating users, and ensuring reliable message delivery.
+                            </p>
+                            
+                            <p>
+                                On the other hand, the client component serves as an interface for users to interact with the chat system.
+                                It allows users to connect to the server, send messages to other clients, and receive messages from them.
+                                The client application provides a user-friendly interface that enables users to view online users, join chat rooms, and engage in real-time conversations.
+                            </p>
+                            
+                            <p>
+                                The core implementation of the project utilizes the C programming language.
+                                C is a widely used programming language known for its efficiency and low-level control.
+                                By leveraging C, the application can achieve optimal performance and manage system resources effectively.
+                            </p>
+                            
                         </ul>
                     </div>
                 </div>
@@ -764,46 +872,57 @@ The core implementation of the project utilizes the C programming language. C is
                     <div class="modal-body">
                         <img src="assets/img/p2 extra.png" class="img-thumbnail" />
                         <ul class="text-start text-black-50 mb-0">
-                        <p>
-                         In this project, I implemented a pipelined MIPS processor datapath with various features. The project consisted of two main parts:
-                         </p>
-                        <p>
-                        Part 1:
-                        Implemented a 5-stage pipeline (FDEMW) with branch resolution in the Decode (D) stage and non-memory hazard detection in the Decode (D) stage. Additionally, a 2-cycle pipelined multiplication unit spanning the Execute (E) and Memory (M) stages was included, which reads inputs in the Execute stage and produces outputs in the Memory stage (available in the Writeback stage). The project did not include a hardware divider. For Part 1, I was responsible for implementing hazard detection logic for all hazards and forwarding logic for the EX stage for some hazards, as well as forwarding logic for the M stage for all hazards.
-                        </p>
-                        <p>
-                        Part 2:
-                        Implemented branch prediction extensions, including a 2K-entry bimodal table of 2-bit predictors with an initial 
-                        state of "10." Additionally, a 32-entry Branch Target Buffer (BTB) was implemented to cache the contents 
-                        (not the address) of supported branch and jump instructions (BEQ, BNE, J, JAL). Instructions like JR and 
-                        JALR were explicitly not cached due to target indirection.
-                        </p>
-                        <p>
-                        For both parts, I implemented an instruction cache and a data cache as replacements for the Instruction 
-                        Memory (IMEM) and Data Memory (DMEM), respectively, in the memory hierarchy. The instruction cache, a 2KB 
-                        direct-mapped cache with a block size of 64 bytes, served cache misses from the IMEM. The data cache, 
-                        a 2KB 2-way associative cache with an inverse-MRU eviction policy, was used to serve cache misses from the 
-                        DMEM. The DMEM had a write-back policy and stall-allocated on store misses. Evicted dirty lines were written 
-                        back to the DMEM.
-                        </p>
-                        <p>
-                        Throughout the project, I worked with a provided framework that included files for hazard detection, 
-                        forwarding logic, the branch history table (BHT), and the implementation of the caches. The project was 
-                        divided into milestones, and for Milestone 1, I completed parts 1 and 2, utilizing a dummy memory hierarchy
-                        to test the design before integrating the caches.
-                        </p>
-                        <p>
-                        The framework files relevant to my edits and additions for parts 1 and 2 were:
-                        </p>
-                        <p>
-                        HazardDetection.v: Implementation of hazard detection logic.
-                        EXForwarding.v: Implementation of forwarding logic for the Execute (EX) stage.
-                        MEMforwarding.v: Implementation of forwarding logic for the Memory (MEM) stage.
-                        BHT.v: Implementation of the branch history table for branch prediction.
-                        Overall, this project allowed me to gain experience in designing and implementing a 
-                        pipelined MIPS processor datapath with various pipeline stages, hazard detection, forwarding logic, 
-                        branch prediction, and memory hierarchy using instruction and data caches.
-                        </p>
+                            
+                            
+                            <h1>Project Information</h1>
+                            
+                            <p>
+                                In this project, I implemented a pipelined MIPS processor datapath with various features. The project consisted of two main parts:
+                            </p>
+                            
+                            <h2>Part 1</h2>
+                            
+                            <p>
+                                I implemented a 5-stage pipeline (FDEMW) with branch resolution in the Decode (D) stage and non-memory hazard detection in the Decode (D) stage.
+                                Additionally, a 2-cycle pipelined multiplication unit spanning the Execute (E) and Memory (M) stages was included.
+                                For Part 1, I was responsible for implementing hazard detection logic for all hazards and forwarding logic for the EX stage for some hazards, as well as forwarding logic for the M stage for all hazards.
+                            </p>
+                            
+                            <h2>Part 2</h2>
+                            
+                            <p>
+                                I implemented branch prediction extensions, including a 2K-entry bimodal table of 2-bit predictors with an initial state of "10."
+                                Additionally, a 32-entry Branch Target Buffer (BTB) was implemented to cache the contents (not the address) of supported branch and jump instructions (BEQ, BNE, J, JAL).
+                                Instructions like JR and JALR were explicitly not cached due to target indirection.
+                            </p>
+                            
+                            <p>
+                                For both parts, I implemented an instruction cache and a data cache as replacements for the Instruction Memory (IMEM) and Data Memory (DMEM), respectively, in the memory hierarchy.
+                                The instruction cache, a 2KB direct-mapped cache with a block size of 64 bytes, served cache misses from the IMEM.
+                                The data cache, a 2KB 2-way associative cache with an inverse-MRU eviction policy, was used to serve cache misses from the DMEM.
+                                The DMEM had a write-back policy and stall-allocated on store misses. Evicted dirty lines were written back to the DMEM.
+                            </p>
+                            
+                            <p>
+                                Throughout the project, I worked with a provided framework that included files for hazard detection, forwarding logic, the branch history table (BHT), and the implementation of the caches.
+                                The project was divided into milestones, and for Milestone 1, I completed parts 1 and 2, utilizing a dummy memory hierarchy to test the design before integrating the caches.
+                            </p>
+                            
+                            <p>
+                                The framework files relevant to my edits and additions for parts 1 and 2 were:
+                            </p>
+                            
+                            <ul>
+                                <li><strong>HazardDetection.v:</strong> Implementation of hazard detection logic.</li>
+                                <li><strong>EXForwarding.v:</strong> Implementation of forwarding logic for the Execute (EX) stage.</li>
+                                <li><strong>MEMforwarding.v:</strong> Implementation of forwarding logic for the Memory (MEM) stage.</li>
+                                <li><strong>BHT.v:</strong> Implementation of the branch history table for branch prediction.</li>
+                            </ul>
+                            
+                            <p>
+                                Overall, this project allowed me to gain experience in designing and implementing a pipelined MIPS processor datapath with various pipeline stages, hazard detection, forwarding logic, branch prediction, and memory hierarchy using instruction and data caches.
+                            </p>
+                            
                         </ul>
                     </div>
                 </div>
@@ -822,22 +941,36 @@ The core implementation of the project utilizes the C programming language. C is
                     <div class="modal-body">
                         <img src="assets/img/p1 extra.mov" class="img-thumbnail" />
                         <ul class="text-start text-black-50 mb-0">
+                            
+                            
+                            <h1>Project Information</h1>
+                            
                             <p>
-                            The Room Scheduler project for Tiny College is a room scheduling application that allows faculty members 
-                            to reserve rooms for specific dates based on their seating requirements. The application features a user-friendly 
-                            GUI interface and utilizes a Derby database for data storage. The design follows good 
-                            Object-Oriented Design and Programming principles, with several classes such as Faculty, 
-                            Room, Date, and Reservations to handle different aspects of the application. The project 
-                            implements various user commands, including "Add Faculty" for adding faculty members to the 
-                            database, "Reserve Faculty Date Seats" for assigning rooms to faculty members based on seat 
-                            availability, "Status Reservations by Date" to display the faculty members with reserved rooms 
-                            on a specific date, "Status Waiting List" to display the faculty members on the waiting list, 
-                            "Add Room Seats" to add new rooms, "Add Date" to add new available dates, "Cancel Reservation 
-                            Faculty Date" to remove a reservation for a specific faculty member and date, "Status Faculty 
-                            member" to display the reserved rooms and waitlisted dates for a faculty member, and 
-                            "Drop Room" to remove a room from the application and reassign reservations if possible. 
-                            The project emphasizes good Object-Oriented (OO) design practices and uses SQL statements and PreparedStatements for efficient database operations.
-                            </p> </ul>
+                                The Room Scheduler project for Tiny College is a room scheduling application that allows faculty members to reserve rooms for specific dates based on their seating requirements.
+                                The application features a user-friendly GUI interface and utilizes a Derby database for data storage.
+                                The design follows good Object-Oriented Design and Programming principles, with several classes such as Faculty, Room, Date, and Reservations to handle different aspects of the application.
+                            </p>
+                            
+                            <p>
+                                The project implements various user commands, including:
+                            </p>
+                            
+                            <ul>
+                                <li><strong>Add Faculty:</strong> Adds faculty members to the database.</li>
+                                <li><strong>Reserve Faculty Date Seats:</strong> Assigns rooms to faculty members based on seat availability.</li>
+                                <li><strong>Status Reservations by Date:</strong> Displays the faculty members with reserved rooms on a specific date.</li>
+                                <li><strong>Status Waiting List:</strong> Displays the faculty members on the waiting list.</li>
+                                <li><strong>Add Room Seats:</strong> Adds new rooms.</li>
+                                <li><strong>Add Date:</strong> Adds new available dates.</li>
+                                <li><strong>Cancel Reservation Faculty Date:</strong> Removes a reservation for a specific faculty member and date.</li>
+                                <li><strong>Status Faculty member:</strong> Displays the reserved rooms and waitlisted dates for a faculty member.</li>
+                                <li><strong>Drop Room:</strong> Removes a room from the application and reassigns reservations if possible.</li>
+                            </ul>
+                            
+                            <p>
+                                The project emphasizes good Object-Oriented (OO) design practices and uses SQL statements and PreparedStatements for efficient database operations.
+                            </p>
+                            </ul>
                     </div>
                 </div>
             </div>
